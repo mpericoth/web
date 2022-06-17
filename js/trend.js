@@ -28,7 +28,7 @@ function getTrending(time_window) {
         let card = document.createElement("article");
         card.classList.add('card');
         let aImg= document.createElement("a");
-        aImg.href = `https://mpericoth.github.io/info.html?id=${result.id}`;
+        aImg.href = `https://mpericoth.github.io/web/info.html?id=${result.id}`;
         let img = document.createElement("img")
         img.addEventListener('click', function handleClick(event) {
             console.log('element clicked 🎉🎉🎉', event.target);

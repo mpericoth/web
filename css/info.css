@@ -1,0 +1,106 @@
+/*Informacion*/
+#infoPrimaria {
+    background-position: center;
+    background-size: cover;
+}
+
+.titulo {
+    margin-left: 25px;
+    padding-top: 20px;
+    color: blanchedalmond;
+}
+
+.trailer {
+    display: block;
+    margin: 0 auto;
+    width: 700px;
+    height: 405px;
+}
+
+.botonPlay {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.719);
+    color: blanchedalmond;
+    padding: 10px 20px 10px 20px;
+    width: fit-content;
+    font-size: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin: 10px auto 10px auto;
+}
+
+.descripcion {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.719);
+    font-size: 20px;
+    color: blanchedalmond;
+    border-radius: 10px;
+    padding: 20px 20px 20px 20px;
+}
+
+#infoSecundaria {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    background-color: black;
+    color: blanchedalmond;
+}
+
+#metaDatos {
+    padding-left: 25px;
+}
+
+.actores, .videos {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    max-width: 100%;
+}
+
+.actores div {
+    margin: 0px 5px 0px 5px;
+}
+
+.actores div img {
+    width: 100px;
+}
+
+.video {
+
+    min-width: 700px;
+    min-height: 405px;
+}
+
+.scroll::-webkit-scrollbar {
+    width: 20px;
+}
+
+/* Track */
+.scroll::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+.scroll::-webkit-scrollbar-thumb {
+    background: rgba(80, 74, 74, 0.726);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+.scroll::-webkit-scrollbar-thumb:hover {
+    background: rgb(80, 74, 74);
+}
+
+@media (max-width: 950px) {
+    #infoSecundaria {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 720px) {
+    .trailer {
+        width: 100%;
+    }
+}
